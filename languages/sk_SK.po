@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Themename\n"
+"Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
+"POT-Creation-Date: 2023-01-25 20:23+0100\n"
+"PO-Revision-Date: 2023-01-25 20:26+0100\n"
+"Last-Translator: Oliver Juhas, WebMan Design\n"
+"Language-Team: WebMan Design\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: block/book-meta/render.php:16
+msgid "Book meta info."
+msgstr "Meta informácie o knihe."
+
+#: functions.php:31
+msgid "Book Meta"
+msgstr "Knižné meta"
+
+#: functions.php:32
+msgid "Displays meta info about single Book post type."
+msgstr "Zobrazí meta informácie o danej knihe."
+
+#: patterns/content-404.php:11
+msgctxt "Error code for a webpage that is not found."
+msgid "404"
+msgstr "404"
+
+#: patterns/content-404.php:15
+msgid "Error 404: the page was not found."
+msgstr "Chyba 404: stránka sa nenašla."
+
+#: patterns/content-book-tags.php:11
+msgid "/book_tag/read/"
+msgstr "/book_tag/precitane/"
+
+#: patterns/content-book-tags.php:11
+msgid "✔ Read"
+msgstr "✔ Prečítané"
+
+#: patterns/content-book-tags.php:15
+msgid "/book_tag/reading/"
+msgstr "/book_tag/citam/"
+
+#: patterns/content-book-tags.php:15
+msgid "⋯ Reading"
+msgstr "⋯ Čítam"
+
+#: patterns/content-book-tags.php:19
+msgid "/book_tag/to-read/"
+msgstr "/book_tag/necitane/"
+
+#: patterns/content-book-tags.php:19
+msgid "⨯ To read"
+msgstr "⨯ Nečítané"
+
+#: patterns/content-nothing-found.php:11
+msgid "No results were found here."
+msgstr "Nenašli sa žiadne výsledky."

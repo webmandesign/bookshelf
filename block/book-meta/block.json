@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+
+	"name": "bookshelf/book-meta",
+	"title": "Book Meta",
+	"description": "Displays meta info about single Book post type.",
+	"version": "1.0.0",
+	"keywords": [ "book", "meta" ],
+	"textdomain": "bookshelf",
+
+	"category": "theme",
+	"icon": "book-alt",
+
+	"supports": {
+		"align": true,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"lineHeight": true,
+			"fontSize": true
+		}
+	},
+
+	"render": "file:./render.php"
+}
