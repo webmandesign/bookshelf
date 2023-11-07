@@ -5,7 +5,7 @@ Theme Name:   Bookshelf
 Theme URI:    https://github.com/webmandesign/bookshelf/
 Author:       WebMan Design
 Author URI:   https://www.webmandesign.eu/
-Version:      1.0.0
+Version:      1.1.0
 Text Domain:  bookshelf
 Domain Path:  /languages
 Description:  Books library website theme.
@@ -13,7 +13,7 @@ License:      GPL-3.0-or-later
 License URI:  https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 Requires at least: 6.1
-Tested up to: 6.1
+Tested up to: 6.4
 Requires PHP: 7.0
 */
 
@@ -53,6 +53,10 @@ html {
 		margin: calc( 6vh + var(--wp-admin--admin-bar--height) ) auto 6vh !important;
 		box-shadow: 0 .5em 3em rgb( #000, .5 );
 		border-radius: 20px;
+
+		&.is-menu-open {
+			padding-inline: 2em;
+		}
 	}
 
 	.wp-block-navigation__responsive {
@@ -62,18 +66,17 @@ html {
 		}
 
 		&-container-content {
-			padding-top: 2em !important;
+			padding-top: 3rem !important;
 		}
 
 		&-container-close {
-			left: 100%;
-			right: auto;
-			top: 3em;
-			padding: 1.5em;
+			position: static;
+			padding: 1.5rem;
+			margin-top: 3rem;
 			background: var(--wp--preset--color--primary);
 			border-radius: 100px;
+			vertical-align: top;
 		}
-
 	}
 
 	.wp-block-navigation__container {
@@ -114,9 +117,7 @@ html {
 			&.is-flex-container.columns-#{ $cols } > li {
 				width: calc( #{ percentage( math.div( 1, $cols ) ) } - var(--posts-gap) / #{ $cols } * #{ $cols - 1 } );
 			}
-
 		}
-
 	}
 
 	.wp-block-query {
@@ -131,7 +132,6 @@ html {
 				border-top-left-radius: 0;
 				border-bottom-left-radius: 0;
 			}
-
 		}
 
 		.hentry:not(.book) .wp-block-cover .wp-block-cover__background {
@@ -160,9 +160,7 @@ html {
 			a {
 				color: inherit;
 			}
-
 		}
-
 	}
 
 	// Alternative layout.
@@ -190,7 +188,6 @@ html {
 			margin: 0 !important;
 			border-radius: .5rem;
 		}
-
 	}
 
 // Books list.
@@ -208,7 +205,6 @@ html {
 		&:not(:hover) img {
 			filter: contrast(1.1) brightness(1.05);
 		}
-
 	}
 
 	.wp-block-query .book {
@@ -228,9 +224,7 @@ html {
 					.wp-block-cover__background {
 						opacity: 0;
 					}
-
 				}
-
 		}
 
 		.wp-block-post-title {
@@ -241,7 +235,6 @@ html {
 			a {
 				color: inherit !important;
 			}
-
 		}
 
 			// Not read yet.
@@ -292,7 +285,6 @@ html {
 			&-price .book-meta-value:not(:empty)::after {
 				content: ' €';
 			}
-
 		}
 
 		&-label {
@@ -305,7 +297,6 @@ html {
 			&::after {
 				content: ':';
 			}
-
 		}
 
 		&-value {
@@ -313,9 +304,7 @@ html {
 			&:empty::before {
 				content: '—';
 			}
-
 		}
-
 	}
 
 // Modifiers.

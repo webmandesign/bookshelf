@@ -1,36 +1,6 @@
 {
-	"customTemplates": [
-		{
-			"name": "single-book",
-			"postTypes": [
-				"book"
-			],
-			"title": "Single Book"
-		}
-	],
-
-	"templateParts": [
-		{
-			"title": "Header",
-			"name": "header",
-			"area": "header"
-		},
-		{
-			"title": "Footer",
-			"name": "footer",
-			"area": "footer"
-		},
-		{
-			"title": "Posts List",
-			"name": "post-template",
-			"area": "uncategorized"
-		},
-		{
-			"title": "Posts List Alternative",
-			"name": "post-template-alt",
-			"area": "uncategorized"
-		}
-	],
+	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
+	"version": 2,
 
 	"settings": {
 		"appearanceTools": true,
@@ -391,6 +361,36 @@
 		}
 	},
 
-	"version": 2,
-	"$schema": "https://schemas.wp.org/wp/6.1/theme.json"
+	"templateParts": [
+		{
+			"title": "Header",
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"title": "Footer",
+			"name": "footer",
+			"area": "footer"
+		},
+		{
+			"title": "Posts List",
+			"name": "post-template",
+			"area": "uncategorized"
+		},
+		{
+			"title": "Posts List Alternative",
+			"name": "post-template-alt",
+			"area": "uncategorized"
+		}
+	],
+
+	"customTemplates": [
+		{
+			"name": "single-book",
+			"postTypes": [
+				"book"
+			],
+			"title": "Single Book"
+		}
+	]
 }
